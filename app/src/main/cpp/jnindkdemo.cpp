@@ -35,5 +35,5 @@ extern "C"
 JNIEXPORT jstring JNICALL
 Java_com_example_jnindkdemo_MainActivity_getMsgFromJni(JNIEnv *env, jobject thiz) {
     // TODO: implement getMsgFromJni()
-    return env->NewStringUTF("Native code rules! Abhishek Majhi");
+    return env->NewStringUTF("Native code rules! Abhishek");
 }

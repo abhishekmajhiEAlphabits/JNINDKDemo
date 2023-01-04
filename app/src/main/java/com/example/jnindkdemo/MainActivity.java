@@ -8,6 +8,8 @@ import android.view.View;
 
 import com.example.jnindkdemo.databinding.ActivityMainBinding;
 
+
+
 public class MainActivity extends AppCompatActivity {
 
     ActivityMainBinding binding;
@@ -30,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void run() {
                 binding.text.setText(getMsgFromJni());
             }
-        },3000);
+        },2000);
 
 
     }

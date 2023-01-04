@@ -37,12 +37,30 @@ android {
         viewBinding true
     }
 
+    sourceSets {
+        main {
+            //path to folder where placed .so splitted by arch
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+
+
+    /*
     externalNativeBuild {
         cmake {
             path file('src/main/cpp/CMakeLists.txt')
             version '3.18.1'
         }
     }
+
+    use this only when to add c++ code internally from the code
+
+    To use .so external compiled c++ shared library use SourceSets block.
+
+    for using .so file copy the .so files into lib folder from the build/intermediate/cmake/
+    after building the apk of app.
+
+    * */
 }
 
 dependencies {
